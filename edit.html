@@ -9,7 +9,7 @@
     />
     <title>Skydash Admin</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="../../vendors/feather/feather.css" />
+    <link rel="stylesheet" href="vendors/feather/feather.css" />
     <link
       rel="stylesheet"
       href="../../vendors/ti-icons/css/themify-icons.css"
@@ -90,11 +90,13 @@
           <div class="content-wrapper">
             <div class="row">
               <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Create New Brand</h4>
+                <div class="card bg-trans">
+                  
+                    <h4 class="card-title" id="title-brand">
+                      <i class="ti-reload text-success"></i>
+                       Loading data, please wait</h4>
 
-                    <form class="forms-sample" id="myForm">
+                    <form class="forms-sample" id="myFormEdit">
                       <div class="card-body">
                         <h3 class="card-description">Category</h3>
                         <div class="form-group">
@@ -267,12 +269,12 @@
                           </table>
                         </div>
 
-                      <button type="submit" class="btn btn-primary mt-4">
-                        Submit
-                      </button>
+                      <div id="saveEditButton" type="submit" class="btn btn-primary mt-4">
+                        Save Edit
+                      </div>
                       
                     </form>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -322,6 +324,6 @@
     <script src="../../js/typeahead.js"></script>
     <script src="../../js/select2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../../js/script.js"></script>
+    <script src="js/script3.js"></script>
   </body>
 </html>
